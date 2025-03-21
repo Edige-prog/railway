@@ -2,9 +2,9 @@ from fastapi import FastAPI
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
-from app.api.auth import router as auth_router
-from app.api.flowers import router as flowers_router
-from app.api.cart import router as cart_router
+from api.auth import router as auth_router
+from api.flowers import router as flowers_router
+from api.cart import router as cart_router
 import uvicorn
 
 app = FastAPI()
