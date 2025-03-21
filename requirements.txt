@@ -9,3 +9,4 @@ python-multipart==0.0.20
 pydantic==2.8.2
 pydantic-settings==2.4.0
 email-validator==2.2.0
+hypercorn==0.14.4
