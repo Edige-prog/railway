@@ -1,8 +1,8 @@
 from xmlrpc.client import ResponseError
-from ..schemas.flowers import FlowerCreate, FlowerInfo
+from schemas.flowers import FlowerCreate, FlowerInfo
 from fastapi import HTTPException
 from sqlalchemy.orm import Session
-from ..database.models import Flower
+from database.models import Flower
 from sqlalchemy import update
 
 

@@ -2,14 +2,14 @@ from fileinput import close
 from typing import List
 
 from fastapi import HTTPException, Request
-from ..repo.flowers import FlowersRepository
-from ..schemas.cart import PurchaseItemInfo
+from repo.flowers import FlowersRepository
+from schemas.cart import PurchaseItemInfo
 from sqlalchemy.orm import Session
-from ..database.models import Purchase, PurchaseItem
+from database.models import Purchase, PurchaseItem
 from fastapi import Depends
 from sqlalchemy import select
 
-from ..schemas.flowers import FlowerInfo
+from schemas.flowers import FlowerInfo
 
 
 class CartRepository:

@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from .flowers import FlowerInfo
+from schemas.flowers import FlowerInfo
 
 class PurchaseItemInfo(BaseModel):
     id: int
@@ -11,8 +11,12 @@ class PurchaseItemInfo(BaseModel):
         json_schema_extra = {
             "example": {
                 "id": 1,
-                "name": "Rose",
-                "price": 500,
-                "quantity": 101,
+                "flower": {
+                    "id": 1,
+                    "name": "Rose",
+                    "price": 500,
+                    "quantity": 10
+                },
+                "quantity": 2
             }
         }

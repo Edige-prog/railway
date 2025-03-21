@@ -1,8 +1,8 @@
 from sqlalchemy.orm import Session
-from app.schemas.users import UserCreate, UserInfo, UserUpdate
+from schemas.users import UserCreate, UserInfo, UserUpdate
 from pydantic import EmailStr
 from fastapi import HTTPException
-from app.database.models import User
+from database.models import User
 
 
 class UserRepository:
