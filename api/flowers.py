@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException, Request, Form
-from ..repo.flowers import FlowersRepository
-from ..schemas.flowers import FlowerCreate, FlowerInfo
+from repo.flowers import FlowersRepository
+from schemas.flowers import FlowerCreate, FlowerInfo
 from fastapi.responses import RedirectResponse
-from ..database.db import get_db
+from database.db import get_db
 from sqlalchemy.orm import Session
 
 router = APIRouter()

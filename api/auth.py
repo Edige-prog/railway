@@ -1,13 +1,13 @@
 from fastapi import APIRouter, Depends, HTTPException, status, Form
-from app.schemas.users import UserInfo, UserCreate, UserLogin, UserUpdate
-from app.repo.users import UserRepository
-from app.utils.security import hash_password, verify_password, create_jwt_token, decode_jwt_token
+from schemas.users import UserInfo, UserCreate, UserLogin, UserUpdate
+from repo.users import UserRepository
+from utils.security import hash_password, verify_password, create_jwt_token, decode_jwt_token
 from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from typing import Optional
-from app.database.db import get_db
+from database.db import get_db
 from sqlalchemy.orm import Session
-from ..utils.security import oauth2_scheme
+from utils.security import oauth2_scheme
 
 
 router = APIRouter()
